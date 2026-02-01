@@ -6,3 +6,4 @@ jobs:
     with:
       board: seeeduino_xiao_ble
       shield: combo9
+      
