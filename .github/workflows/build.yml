@@ -2,7 +2,7 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: ./.github/workflows/build-all.yml
+    uses: ./.github/workflows/build-user-config.yml
     with:
       machine: |
         - board: seeeduino_xiao_ble
