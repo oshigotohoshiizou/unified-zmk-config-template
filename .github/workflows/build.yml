@@ -1,4 +1,7 @@
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   build:
@@ -6,4 +9,3 @@ jobs:
     with:
       board: seeeduino_xiao_ble
       shield: combo9
-      
