@@ -1,0 +1,21 @@
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+    };
+
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-direct";
+        label = "KSCAN";
+        input-gpios
+            = <&xiao_d 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // 1番ピン
+            , <&xiao_d 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // 2番
+            , <&xiao_d 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // 3番
+            , <&xiao_d 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // 4番
+            , <&xiao_d 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // 5番
+            , <&xiao_d 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // 6番
+            , <&xiao_d 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // 7番
+            , <&xiao_d 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // 8番
+            , <&xiao_d 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // 9番
+            ;
+    };
+};

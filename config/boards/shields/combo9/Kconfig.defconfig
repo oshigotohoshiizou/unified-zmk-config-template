@@ -1,0 +1,4 @@
+if SHIELD_COMBO9
+config ZMK_KEYBOARD_NAME
+    default "combo9"
+endif
